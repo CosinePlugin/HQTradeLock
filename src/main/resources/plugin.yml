@@ -1,0 +1,17 @@
+name: HQTradeLock
+main: kr.hqservice.trade.lock.TradeLock
+version: 1.0.0
+api-version: 1.13
+
+depend:
+  - MS-Core
+
+permissions:
+  hqservice.trade.lock.bypass:
+    default: op
+  hqservice.trade.lock.command:
+    default: op
+
+commands:
+  거래불가:
+    permission: hqservice.trade.lock.command
